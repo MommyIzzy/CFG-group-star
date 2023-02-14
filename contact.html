@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Contact Page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Varela Round"
+    />
+    <link rel="stylesheet" href="contact.css">
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- Bootstrap 4.0.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery 3.6.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper js 1.16.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap 4.0.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ccbeb23726.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body id="homePage">
+   
+    <header>
+      <!-- Intro settings -->
+      <style>
+        /* Default height for small devices */
+        #intro-example {
+          height: 20vw;
+        }
+    
+        /* Height for devices larger than 992px */
+        @media (min-width: 992px) {
+          #intro-example {
+            height: 28vw;
+          }
+        }
+      </style>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <!-- Toggler/collapsible Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" >
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./maria.html">Maria Skolodowska-Curie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./katherine.html">Katherine Johnson</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./rosa.html">Rosa Louise Parks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Background image -->
+      <div
+        id="intro-example"
+        class="bg-image"
+      >
+      <video class="position-absolute" style="min-width: 100%; min-height:100%;  left: 0; top: 0;" playsinline autoplay muted loop>
+        <source src="https://mdbootstrap.com/img/video/Lines.mp4"
+        type="video/mp4"
+        >
+      </video>
+      <div class="mask" style="background-color: rgba(150, 5, 17, 0.6);">
+      </div>
+        <svg class="position-absolute"
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 1440 320"
+            style="left: 0; bottom: 0"
+            >
+          <path 
+          fill= "rgb(228, 224, 216)"
+          fill-opacity="1" 
+          d="M0,256L60,234.7C120,213,240,171,360,170.7C480,171,600,213,720,245.3C840,277,960,299,1080,272C1200,245,1320,171,1380,133.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+        </svg>
+      </div>
+
+<!--contact form -->
+      <div class="container">
+        <h2>Contact Us</h2>
+
+        <div class="form">
+
+<div class="name">
+    <input type="text" placeholder="Enter your name" id="name" required>
+</div>
+<!-- <div class="address">
+    <input type="text" placeholder="Enter your address">
+</div> -->
+<div class="phone_no">
+    <input type="text" placeholder="Enter Phone Number" id="phone" required>
+</div>
+<div class="email">
+    <input type="text" placeholder="Enter Email"  id="email" required>
+</div>
+<div class="comment">
+    <textarea  id="message" cols="10" rows="10" placeholder="Message Here" required></textarea>
+</div>
+<div class="button">
+    <button id="send" onclick="message()" >Submit</button>
+</div>
+<div class="message">
+    <div class="success" id="success">Thank You!</div>
+<div class="danger" id="danger">Please fill the Fields</div>
+</div>
+</div>
+    </main>
+ <script src="contact.js"></script>
+  </body>
+
+</html>

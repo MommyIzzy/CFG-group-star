@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+ .container{
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+ }
+ .container h2{
+    margin-bottom: 0;
+ }
+ .form{
+    width: 50%;
+    margin: auto;
+ }
+ input,textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px !important;
+    border: none;
+    outline: none;
+    background: #eee;
+    color: #bbb;
+ }
+ button#send {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+border: none;
+outline: none;  
+  color: #fff;
+  font-weight: 800;
+  background-color: rgb(238, 147, 200);
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px !important;
+
+ }
+  button#send:hover{
+    background: #007bff;
+    transition: all 2s ease ;
+  }
+
+  .message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation:button .3s linear ;
+    display: none;
+  }
+
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    animation:button .3s linear ;
+    display: none;
+
+}
+
+@keyframes button{
+    0%{
+transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .form{
+        width: 80%;
+        margin: auto;
+     }
+    
+
+}
